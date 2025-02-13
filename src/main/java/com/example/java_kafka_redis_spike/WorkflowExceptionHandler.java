@@ -5,10 +5,10 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 
-public class ExceptionHandler {
+public class WorkflowExceptionHandler {
     private Jedis jedis;
 
-    public ExceptionHandler(Jedis jedis) {
+    public WorkflowExceptionHandler(Jedis jedis) {
         this.jedis = jedis;
     }
 

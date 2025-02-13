@@ -11,13 +11,13 @@ import static org.junit.Assert.*;
 
 public class ExceptionHandlerTest {
     private Jedis jedis;
-    private ExceptionHandler handler;
+    private WorkflowExceptionHandler handler;
 
     @Before
     public void setUp() {
         jedis = new Jedis("localhost");
         jedis.flushAll(); // Clear Redis database
-        handler = new ExceptionHandler(jedis);
+        handler = new WorkflowExceptionHandler(jedis);
     }
 
     @Test
